@@ -8,7 +8,7 @@ datasource db {
 }
 
 model products {
-   id String @id
+   id String @id @default(uuid())
    description String
    price Float
    quantity Int
